@@ -1,1 +1,6 @@
-Algoritma Order Makanan/Minuman Secara Online
+Algoritma Order Makanan/Minuman Secara Online :
+
+- Start
+- Tampilkan daftar menu yang dapat dipesan
+- Masukan kode menu yang ingin dipesan
+- Pilihan disimpan ke daftar pesanan

@@ -1,0 +1,8 @@
+Program OrderMakananMinuman
+
+READ and WRITE "harga_total" with number
+READ and WRITE "daftar_menu" with list of objects that have name and price
+READ and WRITE "kode_menu" with number
+READ and WRITE "daftar_pesanan" with list of objects that have name and price
+READ and WRITE "kode_menu_hapus" with number
+

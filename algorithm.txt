@@ -1,9 +1,11 @@
 Algoritma Order Makanan/Minuman Secara Online :
 
 - Start
-- Tampilkan daftar menu yang dapat dipesan
+- Inisiasi harga total = 0
+- Tampilkan daftar menu yang dapat dipesan beserta harganya
 - Masukan kode menu yang ingin dipesan
-- Pilihan disimpan ke daftar pesanan
+- Pilihan beserta harganya disimpan ke daftar pesanan
+- Harga total ditambahkan dengan harga menu pilihan
 - Apakah ingin memesan menu lain lagi atau tidak ?
     jika iya : Kembali ke langkah 2
     jika tidak : Lanjut ke langkah berikutnya

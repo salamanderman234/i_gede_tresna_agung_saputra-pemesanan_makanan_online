@@ -1,0 +1,38 @@
+Program OrderMakananMinuman
+
+READ and WRITE "harga_total" with number
+READ and WRITE "daftar_menu" with list of objects that have name and price
+READ and WRITE "kode_menu" with number
+READ and WRITE "daftar_pesanan" with list of number
+READ and WRITE "kode_menu_hapus" with number
+READ and WRITE "pilihan" with string
+READ and WRITE "control_repeat" with boolean
+READ and WRITE "control_delete" with boolean
+
+DO 
+    PRINT "daftar_menu"
+    INPUT "kode_menu"
+    STORE "daftar_pesanan" WITH "kode_menu"
+    STORE "harga_total" WITH "harga_total" + "daftar_menu"["kode_menu"].price
+    INPUT "pilihan"
+
+    DO
+        IF "pilihan" == "pesan lagi" THEN
+            STORE "control_repeat" WITH true
+            STORE "control_delete" WITH false
+        ELSE IF "pilihan" == "hapus pesanan" THEN 
+            INPUT "kode_menu_hapus"
+            IF "daftar_pesanan" HAS "kode_menu_hapus" THEN
+                DELETE from "daftar_pesanan" WHERE element == "kode_menu_hapus"
+                STORE "harga_total" WITH "daftar_menu"["kode_menu_hapus"].price
+            STORE "control_delete" WITH true
+        ELSE THEN
+            STORE "control_delete" WITH false
+            STORE "control_repeat" WITH false
+    WHILE ("control_delete")
+
+WHILE("control_repeat")
+
+PRINT("daftar_pesanan")
+
+        

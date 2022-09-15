@@ -4,3 +4,6 @@ Algoritma Order Makanan/Minuman Secara Online :
 - Tampilkan daftar menu yang dapat dipesan
 - Masukan kode menu yang ingin dipesan
 - Pilihan disimpan ke daftar pesanan
+- Apakah ingin memesan menu lain lagi atau tidak ?
+    jika iya : Kembali ke langkah 2
+    jika tidak : Lanjut ke langkah berikutnya
